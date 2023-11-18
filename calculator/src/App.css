@@ -1,0 +1,112 @@
+
+.parent{
+  background-image: url(/img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+    background: rgba(0, 0, 0, 0.503);
+    
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px; /* Adjust as needed */
+
+  }
+  
+  .display {
+    background: #33333385; 
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    border: 1px solid rgba(255, 255, 255, 0.115);
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .button1 {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    flex: 1; /* Makes buttons take up equal space */
+    margin: 0 5px;
+  }
+
+
+  button {
+    
+    background: #33333385; 
+    color: #fff;
+    border: 2px solid transparent; 
+    padding: 15px;
+    font-size: 1em; 
+    border-radius: 10px;
+    flex: 1;
+    margin: 0 5px;
+    transition: all 0.3s ease; 
+    cursor: pointer; 
+    outline: none; 
+  }
+
+
+
+
+  
+  button.zero-button {
+    flex: 2; 
+  }
+  
+
+  div button:nth-of-type(4) {
+    background: #7B8CDE;
+     color:black;
+     font-size: 1.5em;
+  }
+
+  div button:nth-of-type(4):hover {
+    background: #C0E6DE;
+  }
+
+
+
+    
+  .button1:hover {
+    background: #902f2f66;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    flex: 1; /* Makes buttons take up equal space */
+    margin: 0 5px;
+  }
+
+  button:hover {
+    background: #7A7265; /* Change background color on hover */
+    color: white;
+    border-color: #ffffff63; /* Add a border color on hover */
+    padding: 15px;
+    font-size: 1.5em; /* Increase font size on hover */
+    border-radius: 10px;
+    flex: 1;
+    margin: 0 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transform: scale(1.05); /* Slightly increase the scale */
+  }
